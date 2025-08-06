@@ -1,4 +1,4 @@
-// ColorGridBackground.tsx
+
 import { motion } from "@/lib/motion";
 
 export function ColorGridBackground() {
@@ -18,7 +18,7 @@ export function ColorGridBackground() {
           </radialGradient>
         </defs>
         <rect width="1440" height="900" fill="url(#grad)" />
-        {/* Líneas de cuadrícula */}
+
         {[...Array(20)].map((_, i) => (
           <line
             key={i}

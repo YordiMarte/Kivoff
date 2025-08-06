@@ -1,19 +1,21 @@
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
-import { ObservabilitySection } from "@/components/ObservabilitySection"
 import { ProductsSection } from "@/components/ProductsSection"
-import { FeaturesSection } from "@/components/FeaturesSection"
 import { TemplatesSection } from "@/components/TemplatesSection"
+import { Information } from "@/components/Information"
+import { Ask } from "@/components/Ask"
+import { Community } from "@/components/community"
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <ObservabilitySection />
+      <Information />
       <ProductsSection />
       <TemplatesSection />
-      <FeaturesSection />
+      <Community />
+      <Ask />
     </>
   )
 }

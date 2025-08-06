@@ -10,15 +10,15 @@ import { Triangle } from "lucide-react"
 
 export function Navbar () {
   return (
-      <header className="sticky top-0 z-50 w-full border-b border-gray-800 backdrop-blur-md bg-black">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-black">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 pt-8 pb-4">
 
           <div className="flex items-center gap-3 ml-32">
             <img src="/KivoffL.svg" alt="Kivoff Logo" className="h-8 w-auto" />
           </div>
 
 <div className="flex flex-row flex-wrap justify-start gap-12 opacity-60">
-          <nav className="hidden justify-end gap-8 text-sm text-gray-300 md:flex">
+          <nav className="hidden justify-end gap-8 text-md text-gray-300 md:flex">
             <a href="#productos" className="hover:text-white transition-colors">Products</a>
             <a href="#developers" className="hover:text-white transition-colors">Developers</a>
             <a href="#solutions" className="hover:text-white transition-colors">Solutions</a>

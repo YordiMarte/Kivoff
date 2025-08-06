@@ -4,9 +4,9 @@ import { motion } from "@/lib/motion"
 
 const products = [
   {
-    name: "CoreKit",
-    icon: "🗄️",
-    iconBg: "bg-blue-500",
+    name: "Infera.js",
+    icon: <img src="/In.svg" alt="Infera.js Logo" className="w-8 h-8" />,
+    iconBg: "bg-black",
     status: "Disponible",
     statusColor: "bg-green-100 text-green-700",
     description: "Framework fullstack con Supabase integrado, autenticación lista y componentes pre-construidos",
@@ -15,9 +15,9 @@ const products = [
     available: true
   },
   {
-    name: "vX",
-    icon: "⚡",
-    iconBg: "bg-purple-500",
+    name: "Veftro",
+    icon: <img src="/Ve.svg" alt="Veftro Logo" className="w-8 h-8" />,
+    iconBg: "bg-black",
     status: "Beta",
     statusColor: "bg-blue-100 text-blue-700",
     description: "Generador visual de interfaces con IA que convierte diseños en código React + Tailwind",
@@ -26,9 +26,9 @@ const products = [
     available: true
   },
   {
-    name: "Kivoff AI",
-    icon: "🧠",
-    iconBg: "bg-green-500",
+    name: "Oryza",
+    icon: <img src="/O.svg" alt="Oryza Logo" className="w-8 h-8" />,
+    iconBg: "bg-black",
     status: "Próximamente",
     statusColor: "bg-purple-100 text-purple-700",
     description: "SDK para crear asistentes inteligentes y automatizar workflows de desarrollo",
@@ -37,9 +37,9 @@ const products = [
     available: false
   },
   {
-    name: "Devflow",
-    icon: "🔄",
-    iconBg: "bg-orange-500",
+    name: "Fforve",
+    icon: <img src="/f.svg" alt="Fforve Logo" className="w-8 h-8" />,
+    iconBg: "bg-black",
     status: "En desarrollo",
     statusColor: "bg-orange-100 text-orange-700",
     description: "Monorepo avanzado con herramientas de CI/CD, testing y deployment automatizado",
@@ -51,15 +51,15 @@ const products = [
 
 export function ProductsSection() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-black py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Nuestros Productos
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Our products
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Herramientas y frameworks diseñados para acelerar el desarrollo moderno
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            Tools and frameworks designed to accelerate modern development
           </p>
         </div>
 

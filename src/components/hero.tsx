@@ -14,32 +14,25 @@ import { InfiniteScrollLogos } from "./InfiniteScrollLogos"
 export function Hero() {
     return (
         <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Announcement Bar */}
-            <div className="absolute top-0 left-0 w-full flex justify-center z-20 pt-8 mt-10">
-                <div className="flex items-center gap-3 bg-transparent">
+            <div className="absolute top-0 left-0 w-full flex justify-center z-20 pt-8 mt-3">
+                <button className="flex items-center gap-3 bg-[#181A1B] border border-[#333] px-4 py-2 rounded-full shadow hover:bg-[#232526] transition-colors">
                     <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
                         New
                     </span>
-                    <span className="text-white text-sm font-light font-sans">
-                        Catch up with everything we announced at Kivoff Ship v1
+                    <span className="text-white text-xm font-medium font-sans">
+                        View all the announcements
                     </span>
-                    <button className="ml-1 bg-white text-black font-medium font-sans text-sm px-3 py-1.5 rounded-full flex items-center gap-1 shadow hover:bg-gray-100 transition-colors">
-                        Watch on demand
-                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                    </button>
-                </div>
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-1 text-white"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </button>
             </div>
             <ColorGridBackground />
             <main className="mx-auto max-w-7xl px-6 py-24 w-full">
 
                 <div className="text-center">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-white mb-8 mt-15">
+                    <h1 className="font-sans font-medium text-white text-[50px] leading-[62px] md:text-[70px] md:leading-[80px] lg:text-[88px] lg:leading-[90px] mb-10 mt-10">
                         Build and deploy the future <br />
-                        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Powered by AI.</span>
+                        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Powered by AI</span>
                     </h1>
-                    <p className="text-lg md:text-xl text-gray-300 text-center font-light font-sans max-w-3xl mx-auto mb-2 mt-10">
-                        Kivoff offers AI-powered tools and infrastructure to create, scale, and launch smarter digital products.
-                    </p>
 
                     <div className="flex flex-row gap-4 justify-center mb-24 mt-10">
                         <button className="bg-white text-black px-6 py-3 rounded-full font-medium flex items-center gap-2 shadow transition-colors hover:bg-gray-100">
@@ -62,20 +55,15 @@ export function Hero() {
                     </div>
 
 
-
-                    {/* Trusted By Section */}
-                    <div className="mt-1">
-                        <InfiniteScrollLogos />
-                        <p className="text-sm font-medium text-gray-500 mb-4 mt-3">
-                            Backed by the world's best teams and products. 
-                            <br />
-                            From small startups to established companies.
+                    <div className="mt-1">                        
+                        <p className="text-center text-[15px] font-mono font-normal tracking-wider text-gray-500 mb-4 mt-0 uppercase">
+                            BACKED BY THE WORLD'S BEST TEAMS AND PRODUCTS 
                         </p>
                     </div>
+                    <InfiniteScrollLogos />
+
                 </div>
             </main>
-
-            {/* Background Effects */}
             <div className="absolute inset-0 -z-10 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>

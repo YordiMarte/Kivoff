@@ -14,7 +14,11 @@ import {
   Shield,
   Users,
   Code,
-  Rocket
+  Rocket,
+  Lock,
+  Brain,
+  Command,
+  CodeXml,
 } from "lucide-react"
 
 const templates = [
@@ -22,52 +26,44 @@ const templates = [
     name: "Accelerated Development",
     description: "Tools that reduce development time by 70% with pre-built components and optimized templates.",
     icons: [
-      { icon: Rocket, label: "Rocket" }
+      { icon: Command, label: "Command" }
     ],
   },
   {
     name: "Integrated Security",
     description: "Authentication and authorization are out of the box, with security best practices implemented from the start.",
     icons: [
-      { icon: Code, label: "Next.js" },
-      { icon: Zap, label: "Vercel" }
+      { icon: Lock, label: "Lock" }
     ],
   },
   {
-    name: "AI Chatbot",
-    description: "An open-source AI chatbot app template built with Next.js, the Vercel AI SDK, OpenAI, and Supabase.",
+    name: "Complete Observability",
+    description: "Real-time monitoring, detailed metrics, and smart alerts to keep your applications running smoothly.",
     icons: [
-      { icon: Code, label: "Next.js" },
-      { icon: Bot, label: "OpenAI" },
-      { icon: Zap, label: "Vercel" }
+      { icon: CodeXml, label: "Codexml" },
     ],
-    link: "#"
   },
   {
-    name: "LangChain + Next.js Starter",
-    description: "Starter template and example use-cases for LangChain projects in Next.js, including chat, agents, and retrieval.",
+    name: "Integrated AI",
+    description: "Native AI capabilities to automate repetitive tasks and improve development productivity.",
     icons: [
-      { icon: MessageSquare, label: "LangChain" },
-      { icon: Code, label: "Next.js" }
+      { icon: Brain, label: "Brain" }
     ],
-    link: "#"
   },
   {
-    name: "Flutter User Management",
-    description: "Get started with Supabase and Flutter by building a user management app with auth, file storage, and database.",
+    name: "Optimized Performance",
+    description: "Ultra-fast apps with automatic optimizations, lazy loading, and smart caching.",
     icons: [
-      { icon: Smartphone, label: "Flutter" }
+      { icon: Zap, label: "Zap" }
     ],
-    link: "#"
   },
   {
-    name: "Expo React Native Starter",
-    description: "An extended version of create-t3-turbo implementing authentication on both the web and mobile applications.",
+    name: "Global Scalability",
+    description: "Automatic deployment to multiple regions with global CDN and intelligent load balancing.",
     icons: [
-      { icon: Globe, label: "Expo" }
+      { icon: Globe, label: "Globe" }
     ],
-    link: "#"
-  }
+  },
 ]
 
 export function TemplatesSection() {
@@ -84,8 +80,8 @@ export function TemplatesSection() {
           </p>
           </div>
 
-        {/* Templates Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Templates Grid - estilo tarjetas modernas */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {templates.map((template, index) => (
             <motion.div
               key={template.name}
@@ -93,64 +89,28 @@ export function TemplatesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all duration-300 hover:bg-gray-800/50"
+              className="relative rounded-2xl border border-gray-700 bg-[#111112] p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+              style={{ boxShadow: '0 0 0 1.5px #fff2, 0 0 12px 0 #fff1' }}
             >
-              {/* Icons */}
-              <div className="flex items-center gap-2 mb-4">
-                {template.icons.map((iconData, iconIndex) => (
-                  <div
-                    key={iconIndex}
-                    className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700"
-                    title={iconData.label}
-                  >
-                    <iconData.icon className="w-4 h-4 text-gray-400" />
-                  </div>
-                ))}
+              {/* Icono grande en la esquina superior izquierda */}
+              <div className="absolute top-6 left-6 flex items-center justify-center w-10 h-10 rounded-lg bg-[#18181b] border border-gray-700">
+                {template.icons[0] && (() => {
+                  const Icon = template.icons[0].icon;
+                  return <Icon className="w-6 h-6 text-gray-300" />;
+                })()}
               </div>
-
-              {/* Title */}
-              <h3 className="text-lg font-semibold text-white mb-3">
+              {/* Título */}
+              <h3 className="text-2xl font-bold text-white mb-2 mt-12">
                 {template.name}
               </h3>
-
-              {/* Description */}
-              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+              {/* Descripción */}
+              <p className="text-gray-300 text-base leading-relaxed">
                 {template.description}
               </p>
-
-              {/* Link */}
-              <a
-                href={template.link}
-                className="inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors text-sm font-medium"
-              >
-                View Template
-                <ExternalLink className="w-4 h-4" />
-              </a>
             </motion.div>
           ))}
         </div>
-
-        {/* Additional CTA */}
-        <div className="text-center mt-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 border border-gray-700"
-          >
-            <h3 className="text-2xl font-bold mb-4">
-              Can't find what you're looking for?
-            </h3>
-            <p className="text-gray-400 mb-6">
-              Create your own template and share it with the community
-            </p>
-            <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Submit Template
-            </button>
-          </motion.div>
-        </div>
+        {/* ...eliminado el CTA adicional... */}
       </div>
     </section>
-  )
-} 
+  )}
