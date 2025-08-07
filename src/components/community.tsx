@@ -10,7 +10,7 @@ const community = [
   {
     name: 'Tex',
     handle: '@thatguy_tex',
-    avatar: '/avatars/user-1.png', 
+    avatar: '/avatars/foto1.png',
     text: "Working with @kivoff has been one of the best dev experiences I've had lately. Incredibly easy to set up, great documentation, and so many fewer hoops to jump through than the competition. I definitely plan to use it on any and all future projects.",
   },
   {
@@ -82,7 +82,7 @@ const community = [
 
 export function Community() {
   // Solo los primeros cinco testimonios
-  const visibleCommunity = community.slice(0, 5);
+  const visibleCommunity = community.slice(0, 11);
 
   return (
     <section className="bg-black py-20">
@@ -100,7 +100,7 @@ export function Community() {
         <div className="overflow-hidden relative">
           <motion.div
             initial={{ x: 0 }}
-            animate={{ x: [0, -600, 0] }}
+            animate={{ x: [0, -1500, 0] }}
             transition={{ repeat: Infinity, duration: 18, ease: "linear" }}
             className="flex gap-6"
           >
