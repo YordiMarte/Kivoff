@@ -4,8 +4,7 @@ import { ProductsSection } from "@/components/ProductsSection"
 import { TemplatesSection } from "@/components/TemplatesSection"
 import { Information } from "@/components/Information"
 import { Ask } from "@/components/Ask"
-import { Community } from "@/components/community"
-
+import Testimonials from "@/components/Testimonials"
 export default function Home() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function Home() {
       <Information />
       <ProductsSection />
       <TemplatesSection />
-      <Community />
+      <Testimonials />
       <Ask />
     </>
   )

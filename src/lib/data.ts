@@ -1,12 +1,4 @@
-'use client'
-
-import React from "react"
-import { motion } from "@/lib/motion"
-import { Github, MessageCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
-
-
-const community = [
+export const testimonials = [
   {
     name: 'Tex',
     handle: '@thatguy_tex',
@@ -77,58 +69,4 @@ const community = [
         avatar: '/avatars/user-11.png',
         text: "Kivoff has been a huge time saver for me. The AI tools are super intuitive, and the community is really supportive. I highly recommend it to anyone looking to build something with Kivoff.",
     }
-]
-
-
-export function Community() {
-  // Solo los primeros cinco testimonios
-  const visibleCommunity = community.slice(0, 11);
-
-  return (
-    <section className="bg-black py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Join the community
-          </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Feedback from the community of developers using kivoff
-          </p>
-        </div>
-
-        {/* Animación de scroll infinito */}
-        <div className="overflow-hidden relative">
-          <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: [0, -1500, 0] }}
-            transition={{ repeat: Infinity, duration: 18, ease: "linear" }}
-            className="flex gap-6"
-          >
-            {visibleCommunity.map((person) => (
-              <div
-                key={person.handle}
-                className="bg-white rounded-xl border border-gray-200 shadow-sm p-8 flex flex-col items-center text-center min-w-[320px] max-w-xs mx-auto"
-              >
-                <img
-                  src={person.avatar}
-                  alt={person.name}
-                  className="h-16 w-16 rounded-full mb-4 border border-gray-100 shadow"
-                />
-                <h3 className="text-lg font-semibold text-gray-900 mb-1 leading-snug">
-                  {person.name}
-                </h3>
-                <span className="text-xs text-gray-400 mb-2">{person.handle}</span>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {person.text}
-                </p>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-
-
+];
