@@ -96,7 +96,7 @@ export function TemplatesSection() {
               <div className="absolute top-6 left-6 flex items-center justify-center w-10 h-10 rounded-lg bg-[#18181b] border border-gray-700">
                 {template.icons[0] && (() => {
                   const Icon = template.icons[0].icon;
-                  return <Icon className="w-6 h-6 text-gray-300" />;
+                  return <Icon className="w-6 h-6 text-[#00DC82]" />;
                 })()}
               </div>
               {/* Título */}
@@ -110,7 +110,6 @@ export function TemplatesSection() {
             </motion.div>
           ))}
         </div>
-        {/* ...eliminado el CTA adicional... */}
       </div>
     </section>
   )}

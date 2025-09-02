@@ -14,7 +14,7 @@ export function Navbar () {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 pt-8 pb-4">
 
           <div className="flex items-center gap-3 ml-32">
-            <img src="/KivoffL.svg" alt="Kivoff Logo" className="h-8 w-auto" />
+            <img src="/KivoffLogo.svg" alt="Kivoff Logo" className="h-10 w-auto" />
           </div>
 
 <div className="flex flex-row flex-wrap justify-start gap-12 opacity-60">

@@ -38,8 +38,8 @@ export function Information() {
           <div className="grid grid-cols-1 gap-y-12 text-center sm:grid-cols-3 sm:gap-x-6 lg:gap-x-8">
             {stats.map(stat => (
               <div key={stat.name} className="flex flex-col items-center">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/10">
-                  <stat.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#00DC82]">
+                  <stat.icon className="h-6 w-6 text-black" aria-hidden="true" />
                 </div>
                 <div className="text-4xl font-bold tracking-tight text-white lg:text-5xl">
                   {stat.value}

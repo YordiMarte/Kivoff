@@ -51,7 +51,7 @@ export function Ask() {
                 className="w-full flex justify-between items-center text-left py-4"
               >
                 <h3 className="text-xl font-medium text-white">{faq.question}</h3>
-                <span className="text-white flex-shrink-0 ml-4">
+                <span className="text-[#00DC82] flex-shrink-0 ml-4">
                   {openIndex === index ? <Minus /> : <Plus />}
                 </span>
               </button>
