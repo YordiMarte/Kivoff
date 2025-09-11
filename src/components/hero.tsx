@@ -64,6 +64,7 @@ export function Hero() {
         <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden">
             
             <div className="absolute top-0 left-0 w-full flex justify-center z-20 pt-8 mt-3">
+                            <a href="#">
                 <button className="flex items-center gap-3 bg-[#181A1B] border border-[#333] px-4 py-2 rounded-full shadow hover:bg-[#232526] transition-colors">
                     <span className="bg-[#00DC82] text-black text-xs font-semibold px-3 py-1 rounded-full">
                         New
@@ -73,6 +74,7 @@ export function Hero() {
                     </span>
                     <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-1 text-white"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </button>
+                </a>
             </div>
             <ColorGridBackground />
             <main className="mx-auto max-w-7xl px-6 py-24 w-full">
@@ -86,24 +88,26 @@ export function Hero() {
                         <span className="text-[#00DC82]">Powered by AI.</span>
                     </h1>
 
-                <div className="flex flex-row gap-6 justify-center mb-24 mt-12">
-                    <button className="bg-white text-black px-7 py-4 rounded-2xl font-semibold flex items-center gap-3 shadow-lg 
-                        hover:shadow-xl hover:bg-gray-100 transition-all duration-300">
-                            <img src="/Logo.svg" alt="Kivoff Logo" className="h-6 w-6" />
-                            Start Deploying
-                        </button>
+    <div className="flex flex-wrap gap-6 justify-center mb-24 mt-12">
+        <a 
+        href="#"
+            className="bg-white text-black px-7 py-4 rounded-2xl font-semibold flex items-center gap-3 shadow-lg 
+                hover:shadow-xl hover:bg-gray-100 hover:scale-105 transition-all duration-300"
+        >
+        <img src="/Logo.svg" alt="Kivoff Logo" className="h-6 w-6" />
+            Start Deploying
+    </a>
 
-                    <button
-                        className="relative px-8 py-4 rounded-2xl font-semibold text-white transition-all duration-300 overflow-hidden"
-                        style={{
-                            border:"2px solid #00DC82",
-                            backgroundColor:"black",
-                        }}
-                    >
-                        <span className="relative z-10">Get a Demo</span>
-                    <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#00DC82] to-[#00b56f] opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
-                </button>
-            </div>
+    <a
+    href="#"
+        className="relative px-8 py-4 rounded-2xl font-semibold text-white border-2 border-[#00DC82] bg-black 
+            overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg"
+    >
+        <span className="relative z-10">Get a Demo</span>
+        <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#00DC82] to-[#00b56f] 
+            opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
+        </a>
+    </div>
 
 
                     <div className="mt-1">
