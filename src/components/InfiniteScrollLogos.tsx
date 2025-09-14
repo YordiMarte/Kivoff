@@ -3,12 +3,12 @@
 const logos = [
   { name: "", logo: "/Infera.jsV.svg" },
   { name: "", logo: "/Veftro.svg" },
-  { name: "", logo: "/Or.svg" },
+  { name: "", logo: "/Ory.svg" },
   { name: "", logo: "/ff.svg" },
-
+  
   { name: "", logo: "/Infera.jsV.svg" },
   { name: "", logo: "/Veftro.svg" },
-  { name: "", logo: "/Or.svg" },
+  { name: "", logo: "/Ory.svg" },
   { name: "", logo: "/ff.svg" },
 ]
 
