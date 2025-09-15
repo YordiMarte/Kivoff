@@ -1,16 +1,17 @@
 'use client'
 
 import { motion } from "@/lib/motion"
+import { flushAllTraces } from "next/dist/trace"
 
 const products = [
   {
     name: "Infera.js",
     icon: <img src="/In.svg" alt="Infera.js Logo" className="w-8 h-8" />,
     iconBg: "bg-black",
-    status: "Disponible",
+    status: "Available",
     statusColor: "bg-green-100 text-green-700",
-    description: "Framework fullstack con Supabase integrado, autenticación lista y componentes pre-construidos",
-    features: ["Auth completa", "Base de datos lista", "API Routes", "Componentes UI"],
+    description: "An SDK + Infrastructure that enables developers to integrate AI in seconds with npm install infera.",
+    features: ["Auth + AI", "SDK + Pnpm ", "API Routes", "Infrastructure automática"],
     link: "#",
     available: true
   },
@@ -18,20 +19,20 @@ const products = [
     name: "Veftro",
     icon: <img src="/Ve.svg" alt="Veftro Logo" className="w-8 h-8" />,
     iconBg: "bg-black",
-    status: "Beta",
-    statusColor: "bg-blue-100 text-blue-700",
-    description: "Generador visual de interfaces con IA que convierte diseños en código React + Tailwind",
+    status: "Coming soon",
+    statusColor: "bg-gray-100 text-gray-700",
+    description: "Visual interface generator with AI that converts designs into React + Tailwind code",
     features: ["Design to Code", "IA Visual", "React + Tailwind", "Export instantáneo"],
     link: "#",
-    available: true
+    available: false
   },
   {
-    name: "Oryza",
-    icon: <img src="/O.svg" alt="Oryza Logo" className="w-8 h-8" />,
+    name: "Oryze",
+    icon: <img src="/O.svg" alt="Oryze Logo" className="w-8 h-8" />,
     iconBg: "bg-black",
-    status: "Próximamente",
-    statusColor: "bg-purple-100 text-purple-700",
-    description: "SDK para crear asistentes inteligentes y automatizar workflows de desarrollo",
+    status: "Coming soon",
+    statusColor: "bg-gray-100 text-gray-700",
+    description: "SDK to create smart assistants and automate development workflows",
     features: ["SDK Modular", "Asistentes IA", "Automation", "Multi-modelo"],
     link: "#",
     available: false
@@ -40,9 +41,9 @@ const products = [
     name: "Fforve",
     icon: <img src="/f.svg" alt="Fforve Logo" className="w-8 h-8" />,
     iconBg: "bg-black",
-    status: "En desarrollo",
-    statusColor: "bg-orange-100 text-orange-700",
-    description: "Monorepo avanzado con herramientas de CI/CD, testing y deployment automatizado",
+    status: "Coming soon",
+    statusColor: "bg-gray-100 text-gray-700",
+    description: "Advanced monorepo with CI/CD tools, testing, and automated deployment",
     features: ["Monorepo Setup", "CI/CD Automático", "Testing Suite", "Deploy One-Click"],
     link: "#",
     available: false
@@ -111,13 +112,13 @@ export function ProductsSection() {
                 {product.available ? (
                   <a
                     href={product.link}
-                    className="inline-flex items-center gap-1 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                    className="inline-flex items-center gap-1 bg-green-100 text-green-700 px-4 py-2 rounded-full font-semibold hover:text-[#00DC82] transition-colors"
                   >
-                    Explorar <span aria-hidden>→</span>
+                    Explore <span aria-hidden>→</span>
                   </a>
                 ) : (
                   <span className="inline-flex items-center gap-1 text-gray-500 font-medium">
-                    Próximamente <span aria-hidden>→</span>
+                    Coming soon <span aria-hidden>→</span>
                   </span>
                 )}
               </div>

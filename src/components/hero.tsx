@@ -3,7 +3,6 @@ import React from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { motion, AnimatePresence } from "@/lib/motion"
-import { ProductCard } from "./ProductCard"
 
 import { Triangle } from "lucide-react";
 import { features } from "process"
@@ -128,59 +127,6 @@ export function Hero() {
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
             </div>
         </section>
-    )
-}
-
-export function Products() {
-    const products = [
-        {
-            logo:"/Infera.jsV.svg",
-            name:"",
-            status:"Available",
-            statusColor:"bg-green-100 text-green-700",
-            description:"Full-stack framework with integrated Supabase, authentication-ready, and pre-built components.",
-            features: ["Auth complete", "Database ready", "API Routes", "UI Components"],
-            link:"#",
-        },
-        {
-            logo:"/Veftro.svg",
-            name:"",
-            status:"Beta",
-            statusColor:"bg-green-100 text-green-700", 
-            description:"AI-powered visual interface builder that turns designs into code React + Tailwind.",
-            features:["Design to Code", "Visual AI", "React + Tailwind", "Instant Export"],
-            link:"#",
-        },
-        {
-            logo:"/Or.svg",
-            name:"",
-            status:"soon",
-            statusColor:"bg-purple-100 text-purple-700",
-            description:"Advanced automation tool for digital workflows.",
-            features:["Automation", "Integrations", "Visual Flows", "Multi-model"],
-            link:"#",
-        },
-        {
-            logo:"/ff.svg",
-            name:"",
-            status:"in development",
-            statusColor:"bg-orange-100 text-orange-700",
-            description:"Deployment and testing platform for modern devices.",
-            features:["Automatic CI/CD", "Testing Suite", "One-Click Deploy", "Monorepo Setup"],
-            link:"#",
-        }
-    ];
-
-    return (
-        <section className="bg-black text-white min-h-screen flex flex-col items-center">
-            {}
-            {}
-            <div className="w-full flex flex-col md:flex-row gap-8 justify-center items-center bg-gray-50 py-12">
-                {products.map((p) => (
-                    <ProductCard key={p.name} {...p} />
-        ))}
-    </div>
-    </section>
     )
 }
 
