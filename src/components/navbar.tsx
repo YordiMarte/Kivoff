@@ -14,13 +14,13 @@ export function Navbar () {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 pt-8 pb-4">
 
           <div className="flex items-center gap-3 ml-32">
-            <a href="#">
+            <Link href="/">
               <img 
                 src="/KivoffLogo.svg"  
                 alt="Kivoff Logo" 
                 className="h-10 w-auto"
           />
-          </a> 
+          </Link>
         </div>
 
           <div className="flex flex-row flex-wrap justify-start gap-12 relative">

@@ -4,7 +4,7 @@ import { ProductsSection } from "@/components/ProductsSection"
 import { TemplatesSection } from "@/components/TemplatesSection"
 import { Information } from "@/components/Information"
 import { Ask } from "@/components/Ask"
-import Testimonials from "@/components/Testimonials"
+import TestimonialCard  from "@/components/TestimonialCard"
 import Footer from "@/components/footer"
 import {AtherFooter} from "@/components/AtherFooter"
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <Information />
       <ProductsSection />
       <TemplatesSection />
-      <Testimonials />
+      <><TestimonialCard /></>
       <Ask />
       <AtherFooter />
       <Footer />
