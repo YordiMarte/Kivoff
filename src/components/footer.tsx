@@ -72,7 +72,7 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                     <p>© {new Date().getFullYear()} Kivoff. All rights reserved.</p>
                     <div className="flex gap-4">
-                        <Link href="/">Privacy Policy</Link>
+                        <Link href="/terms2">Privacy Policy</Link>
                         <Link href="/terms">Terms of Service</Link>
                     </div>
                 </div>
