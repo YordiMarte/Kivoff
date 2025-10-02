@@ -30,17 +30,23 @@ export function Navbar () {
   <button className="hover:text-white border border-black hover:bg-[#18181b] rounded-full px-4 py-2 transition-colors">
     Products
   </button>
+
   <div className="absolute border border-gray-800 left-0 mt-2 hidden group-hover:grid grid-cols-3 gap-8 bg-black text-gray-400 p-8 rounded-2xl shadow-xl w-[900px]">
 
     <div>
       <h4 className="text-sm font-semibold mb-4 text-gray-500">Frameworks</h4>
       <ul className="space-y-3">
         <li>
-          <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+          <a href="" className="flex items-start gap-3 hover:text-white transition-colors">
             <img src="./In.svg" alt="infera.js logo"
-              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors" />
+              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-[#00DC82] transition-colors" />
             <div className="flex flex-col">
-              <span className="font-medium text-white">Infera.JS</span>
+              <span className="font-medium text-white flex items-center gap-2">
+                Infera.JS
+                <span className="text-[10px] font-semibold bg-[#00DC82] text-green-800 px-2 py-0.5 rounded-full transition-colors">
+                Beta
+                </span>
+              </span>
               <span className="text-xs text-gray-400">The AI-ready JS framework</span>
             </div>
           </a>
@@ -50,45 +56,59 @@ export function Navbar () {
       <h4 className="text-sm font-semibold mt-6 mb-4 text-gray-500">Infrastructure</h4>
       <ul className="space-y-3">
         <li>
-          <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+            <div className="flex items-start gap-3 hover:text-white transition-colors">
             <img src="./f.svg" alt="fforve logo"
-              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors" />
+              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-[#00DC82] transition-colors" />
             <div className="flex flex-col">
-              <span className="font-medium text-white">Fforve</span>
+              <span className="font-medium text-white flex items-center gap-2">
+                Fforve
+              <span className="text-[10px] font-semibold bg-gray-800 text-gray-300 px-2 py-0.5 rounded-full">
+                Coming Soon
+              </span>
+            </span>
               <span className="text-xs text-gray-400">Modern infra & scaling</span>
             </div>
-          </a>
+          </div>
         </li>
       </ul>
     </div>
-
 
     <div>
       <h4 className="text-sm font-semibold mb-4 text-gray-500">Platform</h4>
       <ul className="space-y-3">
         <li>
-          <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+          <div className="flex items-start gap-3 hover:text-white transition-colors">
             <img src="./Ve.svg" alt="veftro logo"
-              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors" />
+              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-[#00DC82] transition-colors" />
             <div className="flex flex-col">
-              <span className="font-medium text-white">Veftro</span>
+              <span className="font-medium text-white flex items-center gap-2">
+                Veftro
+                <span className="text-[10px] font-semibold bg-gray-800 text-gray-300 px-2 py-0.5 rounded-full">
+                  Coming Soon
+                </span>
+              </span>
               <span className="text-xs text-gray-400">Next-gen cloud platform</span>
             </div>
-          </a>
+          </div>
         </li>
       </ul>
 
       <h4 className="text-sm font-semibold mt-6 mb-4 text-gray-500">AI</h4>
       <ul className="space-y-3">
         <li>
-          <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+          <div className="flex items-start gap-3 hover:text-white transition-colors">
             <img src="./Ky.svg" alt="ky logo"
-              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors" />
+              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-[#00DC82] transition-colors" />
             <div className="flex flex-col">
-              <span className="font-medium text-white">Ky</span>
+              <span className="font-medium text-white flex items-center gap-2">
+                Ky
+                <span className="text-[10px] font-semibold bg-green-300 text-green-700 px-2 py-0.5 rounded-full">
+                  In Development
+                </span>
+              </span>
               <span className="text-xs text-gray-400">Your personal AI assistant</span>
             </div>
-          </a>
+          </div>
         </li>
       </ul>
     </div>
@@ -97,14 +117,19 @@ export function Navbar () {
       <h4 className="text-sm font-semibold mb-4 text-gray-500">Tools</h4>
       <ul className="space-y-3">
         <li>
-          <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+          <div className="flex items-start gap-3 hover:text-white transition-colors">
             <img src="./O.svg" alt="oryze logo"
-              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors" />
+              className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-[#00DC82] transition-colors" />
             <div className="flex flex-col">
-              <span className="font-medium text-white">Oryze</span>
+              <span className="font-medium text-white flex items-center gap-2">
+                Oryze
+                <span className="text-[10px] font-semibold bg-gray-800 text-gray-300 px-2 py-0.5 rounded-full">
+                  Coming Soon
+                </span>
+              </span>
               <span className="text-xs text-gray-400">Developer tools & automation</span>
             </div>
-          </a>
+          </div>
         </li>
       </ul>
     </div>
@@ -376,14 +401,14 @@ export function Navbar () {
 
 
           <div className="flex gap-4">
-            <a href="#">
+            <Link href="/terms3">
             <Button variant="outline" className="border border-gray-700 bg-[#00DC82] text-black px-3 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
               Log In
             </Button>
-          </a>
+          </Link>
 
           <div className="flex gap-4">
-            <a href="#">
+            <a href="">
             <Button variant="outline" className="border border-gray-700 bg-[#00DC82] text-black px-3 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
               Contact
             </Button>
