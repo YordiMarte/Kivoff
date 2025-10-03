@@ -1,17 +1,12 @@
 export default function TermsServiceL() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#0a0a0a] to-black text-white">
-      {/* Logo */}
       <div className="mb-8 flex flex-col items-center">
         <img
           src="/KivoffLogo.svg"
           alt="Kivoff Logo"
           className="w-12 h-12 mb-4"
         />
-          src="/KivoffLogo.svg"
-          alt="Kivoff Logo"
-          className="w-12 h-12 mb-4"
-        /
         <h1 className="text-lg font-medium">Log in to Kivoff</h1>
       </div>
 

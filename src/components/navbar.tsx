@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button"
 import { Github } from "lucide-react"
 import Link from "next/link"
-import { cn } from "@/lib/utils"
 import { header } from "framer-motion/client"
 import { Triangle } from "lucide-react"
 
