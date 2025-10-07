@@ -5,7 +5,7 @@ export default function TermsServiceL() {
         <img
           src="/KivoffLogo.svg"
           alt="Kivoff Logo"
-          className="w-12 h-12 mb-4"
+          className="h-10 w-auto"
         />
         <h1 className="text-lg font-medium">Log in to Kivoff</h1>
       </div>
