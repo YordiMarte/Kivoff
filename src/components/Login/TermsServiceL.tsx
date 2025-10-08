@@ -5,14 +5,13 @@ export default function TermsServiceL() {
         <img
           src="/KivoffLogo.svg"
           alt="Kivoff Logo"
-          className="h-10 w-auto"
+          className="h-13 w-auto"
         />
-        <h1 className="text-lg font-medium">Log in to Kivoff</h1>
+        <h1 className="text-lg font-medium mt-6">Log in to Kivoff</h1>
       </div>
 
-      {/* Botones */}
       <div className="w-full max-w-xs flex flex-col gap-3">
-        <button className="w-full bg-[#6366f1] hover:bg-[#4f46e5] text-white py-3 rounded-md font-medium transition">
+        <button className="w-full bg-[#00DC82] hover:bg-[#377750] text-white py-3 rounded-md font-medium transition">
           Continue with Google
         </button>
         <button className="w-full bg-[#18181b] hover:bg-[#27272a] text-gray-300 py-3 rounded-md font-medium transition border border-gray-700">

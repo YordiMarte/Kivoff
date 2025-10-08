@@ -6,7 +6,6 @@ import Link from "next/link"
 import { header } from "framer-motion/client"
 import { Triangle } from "lucide-react"
 
-
 export function Navbar () {
   return (
       <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-black">
@@ -407,7 +406,7 @@ export function Navbar () {
           </Link>
 
           <div className="flex gap-4">
-            <a href="">
+            <a href="/terms4">
             <Button variant="outline" className="border border-gray-700 bg-[#00DC82] text-black px-3 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
               Contact
             </Button>
