@@ -11,7 +11,7 @@ export default function TermsServiceL() {
       </div>
 
       <div className="w-full max-w-xs flex flex-col gap-3">
-        <button className="w-full bg-[#00DC82] hover:bg-[#377750] text-white py-3 rounded-md font-medium transition">
+        <button className="w-full bg-[#00DC82] hover:bg-green-300 text-white py-3 rounded-md font-medium transition">
           Continue with Google
         </button>
         <button className="w-full bg-[#18181b] hover:bg-[#27272a] text-gray-300 py-3 rounded-md font-medium transition border border-gray-700">
@@ -25,10 +25,9 @@ export default function TermsServiceL() {
         </button>
       </div>
 
-      {/* Footer */}
       <p className="text-gray-400 text-sm mt-6">
         Don’t have an account?{" "}
-        <a href="/signup" className="text-white hover:underline">
+        <a href="/terms5" className="text-white hover:underline">
           Sign up
         </a>{" "}
         or{" "}

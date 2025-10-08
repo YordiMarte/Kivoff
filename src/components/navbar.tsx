@@ -413,7 +413,7 @@ export function Navbar () {
           </a>
 
           <div className="flex gap-4">
-            <a href="#">
+            <a href="/terms5">
             <Button variant="outline" className="border border-white bg-white text-black px-3 py-3 rounded-md font-medium hover:bg-gray-200 transition-colors">
               Sign Up
             </Button>
