@@ -146,7 +146,7 @@ export function Navbar () {
                 <h4 className="text-sm font-semibold mb-4 text-gray-500">Developers</h4>
                 <ul className="space-y-4">
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <a href="/" className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                           className="lucide lucide-file-text-icon lucide-file-text text-[#00DC82]"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
