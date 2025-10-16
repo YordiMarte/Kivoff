@@ -1,34 +1,20 @@
 "use client"
+
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Search, Sun } from "lucide-react"
+import {  Search , Sun } from "lucide-react"
+import { sections } from "@/components/docs/data/sections"
 
-const sections = [
-  { title: "Getting Started", href: "/docs/getting-started" },
-  { title: "Account", href: "/docs/account" },
-  { title: "Your Sidebar", href: "/docs/sidebar" },
-  { title: "Administration", href: "/docs/administration" },
-  { title: "Teams", href: "/docs/teams" },
-  { title: "Issues", href: "/docs/issues" },
-  { title: "Issue Properties", href: "/docs/issue-properties" },
-  { title: "Projects and Initiatives", href: "/docs/projects" },
-  { title: "Cycles", href: "/docs/cycles" },
-  { title: "Views", href: "/docs/views" },
-  { title: "Find and Filter", href: "/docs/find-filter" },
-  { title: "AI", href: "/docs/ai" },
-  { title: "Integrations", href: "/docs/integrations" },
-  { title: "Analytics", href: "/docs/analytics" },
-]
 
 export function Sidebar() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
-    <aside className="hidden md:flex flex-col w-72 min-h-screen border-r border-neutral-800 bg-black/80 p-6 backdrop-blur-sm">
+    <aside className="hidden md:flex flex-col w-72 min-h-screen border-r border-neutral-800 bg-black/90 p-6 backdrop-blur-md">
       {/* HEADER */}
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex items-center justify-between mb-10">
         <div className="flex items-center gap-3">
           <img src="/KivoffIco.svg" alt="Kivoff Logo" className="h-9 w-9" />
           <Link
@@ -38,6 +24,7 @@ export function Sidebar() {
             Docs
           </Link>
         </div>
+        
 
         <motion.button
           whileHover={{ rotate: 90 }}
@@ -61,7 +48,7 @@ export function Sidebar() {
       {/* NAVIGATION */}
       <nav className="flex-1 overflow-y-auto overflow-x-hidden space-y-1 pr-1">
         {sections.map((s) => {
-          const active = pathname === s.href
+          const active = pathname === s.href;
           return (
             <motion.div
               key={s.href}
@@ -80,22 +67,49 @@ export function Sidebar() {
                 {s.title}
               </Link>
             </motion.div>
-          )
+          );
         })}
       </nav>
 
-      {/* FOOTER */}
       <div className="mt-8 pt-6 border-t border-neutral-800 mx-2">
         <Link
           href="/docs/developers"
-          className="block text-sm text-neutral-400 hover:text-white transition mb-4"
+          className="flex items-center gap-2 mt-2 text-sm text-neutral-400 hover:text-white transition mb-4"
         >
+          <svg xmlns="http://www.w3.org/2000/svg" 
+          width="18" 
+          height="18" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          className="lucide lucide-bot-message-square-icon lucide-bot-message-square"
+          >
+            <path d="M12 6V2H8"/><path d="M15 11v2"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><path d="M9 11v2"/>
+          </svg>
           Kivoff Developers
         </Link>
+
         <Link
           href="/contact-support"
-          className="block mt-2 text-sm text-neutral-400 hover:text-white transition"
+          className="flex items-center gap-2 mt-2 text-sm text-neutral-400 hover:text-white transition"
         >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="18" 
+            height="18" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            className="lucide lucide-message-circle-icon lucide-message-circle"
+            >
+              <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+            </svg>
           Contact Support
         </Link>
       </div>

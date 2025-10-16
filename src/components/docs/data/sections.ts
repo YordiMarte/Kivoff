@@ -1,0 +1,16 @@
+export const sections = [
+  { title: "Getting Started", href: "/docs/getting-started" },
+  { title: "Account", href: "/docs/account" },
+  { title: "Your Sidebar", href: "/docs/sidebar" },
+  { title: "Administration", href: "/docs/administration" },
+  { title: "Teams", href: "/docs/teams" },
+  { title: "Issues", href: "/docs/issues" },
+  { title: "Issue Properties", href: "/docs/issue-properties" },
+  { title: "Projects and Initiatives", href: "/docs/projects" },
+  { title: "Cycles", href: "/docs/cycles" },
+  { title: "Views", href: "/docs/views" },
+  { title: "Find and Filter", href: "/docs/find-filter" },
+  { title: "AI", href: "/docs/ai" },
+  { title: "Integrations", href: "/docs/integrations" },
+  { title: "Analytics", href: "/docs/analytics" },
+];

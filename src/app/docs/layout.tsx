@@ -1,3 +1,5 @@
+"use client";
+
 import { Sidebar } from "@/components/docs/Sidebar";
 
 export default function DocsLayout({ children }: { children: React.ReactNode }) {
