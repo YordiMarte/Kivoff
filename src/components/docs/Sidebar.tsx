@@ -24,10 +24,8 @@ export function Sidebar() {
             Docs
           </Link>
         </div>
-        
-
         <motion.button
-          whileHover={{ rotate: 90 }}
+          whileHover={{ rotate: 45 }}
           transition={{ duration: 0.3 }}
           className="p-2 rounded-md bg-neutral-900 border border-neutral-800 hover:bg-neutral-800"
         >
@@ -46,7 +44,7 @@ export function Sidebar() {
       </div>
 
       {/* NAVIGATION */}
-      <nav className="flex-1 overflow-y-auto overflow-x-hidden space-y-1 pr-1">
+      <nav className="flex-1 overflow-y-auto overflow-x-hidden space-y-2 pr-1 scrollbar-none">
         {sections.map((s) => {
           const active = pathname === s.href;
           return (
@@ -76,7 +74,8 @@ export function Sidebar() {
           href="/docs/developers"
           className="flex items-center gap-2 mt-2 text-sm text-neutral-400 hover:text-white transition mb-4"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" 
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
           width="18" 
           height="18" 
           viewBox="0 0 24 24" 
@@ -85,9 +84,14 @@ export function Sidebar() {
           stroke-width="2" 
           stroke-linecap="round" 
           stroke-linejoin="round" 
-          className="lucide lucide-bot-message-square-icon lucide-bot-message-square"
+          className="lucide lucide-bot-message-square"
           >
-            <path d="M12 6V2H8"/><path d="M15 11v2"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><path d="M9 11v2"/>
+            <path d="M12 6V2H8"/>
+            <path d="M15 11v2"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/>
+            <path d="M9 11v2"/>
           </svg>
           Kivoff Developers
         </Link>

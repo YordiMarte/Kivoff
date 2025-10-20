@@ -9,8 +9,11 @@ export function Navbar() {
   return (
     <nav className="flex items-center justify-between w-full px-8 py-4 border-b border-neutral-800 bg-black/90 backdrop-blur-md sticky top-0 z-50">
       <div className="flex items-center gap-8">
-        <Link href="/" className="text-white font-semibold text-lg hover:text-gray-300 transition">
-          Home
+        <Link 
+            href="/" 
+            className="text-white font-semibold text-lg hover:text-gray-300 transition"
+          >
+            Home
         </Link>
       </div>
 
@@ -25,9 +28,9 @@ export function Navbar() {
 
         <Button
           asChild
-          className="bg-white text-black hover:bg-gray-200 font-semibold px-4 py-2 rounded-md"
+          className="bg-[#00DC82] text-black hover:bg-gray-200 font-semibold px-4 py-2 rounded-md"
         >
-          <Link href="/signup">Sign up</Link>
+          <Link href="/terms5">Sign up</Link>
         </Button>
       </div>
     </nav>
