@@ -160,7 +160,7 @@ export function Navbar () {
                 </li>
 
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <a href="/termsUI" className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-layers2-icon lucide-layers-2 text-[#00DC82]"><path d="M13 13.74a2 2 0 0 1-2 0L2.5 8.87a1 1 0 0 1 0-1.74L11 2.26a2 2 0 0 1 2 0l8.5 4.87a1 1 0 0 1 0 1.74z"/><path d="m20 14.285 1.5.845a1 1 0 0 1 0 1.74L13 21.74a2 2 0 0 1-2 0l-8.5-4.87a1 1 0 0 1 0-1.74l1.5-.845"/></svg>

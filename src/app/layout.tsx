@@ -1,4 +1,4 @@
-import "./globals.css";
+import './globals.css'
 import { GeistSans, GeistMono } from 'geist/font'
 
 export default function RootLayout({

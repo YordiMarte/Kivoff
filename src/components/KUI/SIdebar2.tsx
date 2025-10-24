@@ -17,11 +17,13 @@ export function Sidebar2() {
                     <div className="h-3 w-3 rounded-sm bg-emerald-400" />
                     {open && <h1 className="text-sm font-semibold">Kivoff UI Library</h1>}
                 </div>
+
                 <button 
                     onClick={() => setOpen(!open)} 
-                    className="p-1">
+                    className="p-1"
                     aria-label={open ? "Colapsar menú lateral" : "Expandir menú lateral"}
                     title={open ? "Colapsar menú lateral" : "Expandir menú lateral"}
+                >
                     <ChevronRight
                         className={`h-4 w-4 text-white/60 transition-transform ${
                             open ? "rotate-180" : ""
@@ -51,7 +53,7 @@ export function Sidebar2() {
                         <li>Dropzone</li>
                         <li>Realtime</li>
                     </ul>
-                </div>
+                </div>                
             </div>
         </aside>
     )
