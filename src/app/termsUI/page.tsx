@@ -2,7 +2,7 @@
 
 import { Sidebar2 } from "@/components/KUI/SIdebar2"
 import { Hero2 } from "@/components/KUI/Hero2"
-import { DocsPage } from "@/components/KUI/DocsPage2"
+import  DocsPage2  from "@/components/KUI/DocsPage2"
 
 export default function TermsUIPage() {
     return (
@@ -11,7 +11,7 @@ export default function TermsUIPage() {
             <div className="flex-1 flex flex-col">
                 <main className="px-8 pt-24">
                     <Hero2 />
-                    <DocsPage />
+                    <DocsPage2 />
                 </main>
             </div>
         </div>
