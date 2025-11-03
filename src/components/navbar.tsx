@@ -173,7 +173,7 @@ export function Navbar () {
                   </li>
 
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <a href="termsc\changelog" className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-crown-icon lucide-crown text-[#00DC82]"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
