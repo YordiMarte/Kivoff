@@ -61,9 +61,8 @@ function AnimatedSquares() {
 export function Hero() {
     return (
         <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden">
-            
             <div className="absolute top-0 left-0 w-full flex justify-center z-20 pt-8 mt-3">
-                            <a href="#">
+                    <a href="/termsNew">  
                 <button className="flex items-center gap-3 bg-[#181A1B] border border-[#333] px-4 py-2 rounded-full shadow hover:bg-[#232526] transition-colors">
                     <span className="bg-[#00DC82] text-black text-xs font-semibold px-3 py-1 rounded-full">
                         New

@@ -173,7 +173,7 @@ export function Navbar () {
                   </li>
 
                   <li>
-                    <a href="termsc\changelog" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-crown-icon lucide-crown text-[#00DC82]"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
@@ -182,11 +182,11 @@ export function Navbar () {
                         <span className="font-medium text-white">Changelog</span>
                         <span className="text-xs text-gray-400">See what shipped</span>
                       </div>
-                    </a>
+                    </div>
                   </li>
 
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-life-buoy-icon lucide-life-buoy text-[#00DC82]"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
@@ -195,11 +195,11 @@ export function Navbar () {
                         <span className="font-medium text-white">Support</span>
                         <span className="text-xs text-gray-400">Get help</span>
                       </div>
-                    </a>
+                    </div>
                   </li>
 
                 <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" 
                       className="lucide lucide-compass-icon lucide-compass flex items-center justify-center text-[#00DC82]"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg>
@@ -208,7 +208,7 @@ export function Navbar () {
                         <span className="font-medium text-white">Guides</span>
                         <span className="text-xs text-gray-400">Find help quickly</span>
                       </div>
-                    </a>
+                    </div>
                   </li>
 
                   
@@ -220,7 +220,7 @@ export function Navbar () {
                 <h4 className="text-sm font-semibold mb-4 text-gray-500">Resources</h4>
                 <ul className="space-y-3">
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-smile-icon lucide-smile text-[#00DC82]"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></svg>
@@ -229,11 +229,11 @@ export function Navbar () {
                         <span className="font-medium text-white">Customers</span>
                         <span className="text-xs text-gray-400">Trusted by the teams</span>
                       </div>
-                  </a>
+                  </div>
                 </li>
 
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-pen-tool-icon lucide-pen-tool text-[#00DC82]"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></svg>
@@ -242,11 +242,11 @@ export function Navbar () {
                         <span className="font-medium text-white">Blog</span>
                         <span className="text-xs text-gray-400">The latest posts and changes</span>
                       </div>
-                  </a>
+                  </div>
                 </li>
 
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-heart-handshake-icon lucide-heart-handshake text-[#00DC82]"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762"/></svg>
@@ -255,11 +255,11 @@ export function Navbar () {
                         <span className="font-medium text-white">Become a partner</span>
                         <span className="text-xs text-gray-400">Get help from solutions partners</span>
                       </div>
-                  </a>
+                  </div>
                 </li>
 
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-heart-pulse-icon lucide-heart-pulse text-[#00DC82]"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
@@ -268,11 +268,11 @@ export function Navbar () {
                         <span className="font-medium text-white">Careers</span>
                         <span className="text-xs text-gray-400">Join our team and make an impact</span>
                       </div>
-                  </a>
+                  </div>
                 </li>
 
                   <li>
-                    <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+                    <div className="flex items-start gap-3 hover:text-white transition-colors">
                       <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                         className="lucide lucide-shopping-bag-icon lucide-shopping-bag text-[#00DC82]"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>
@@ -281,7 +281,7 @@ export function Navbar () {
                         <span className="font-medium text-white">Events</span>
                         <span className="text-xs text-gray-400">Join us at an events</span>
                       </div>
-                  </a>
+                  </div>
                 </li>
 
                 </ul>
@@ -316,15 +316,12 @@ export function Navbar () {
       )}
     ].map((item, index) => (
       <li key={index}>
-        <a
-          href="#"
-          className="flex items-start gap-3 hover:text-white transition-colors"
-        >
+        <div className="flex items-start gap-3 hover:text-white transition-colors">
           <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
             {item.icon}
           </div>
           <span className="font-medium text-white">{item.label}</span>
-        </a>
+        </div>
       </li>
     ))}
   </ul>
@@ -335,7 +332,7 @@ export function Navbar () {
 
 <div>
   <h4 className="text-sm font-semibold mb-4 text-gray-500">WHO IT’S FOR</h4>
-<ul className="space-y-3">
+    <ul className="space-y-3">
   {[
     { 
       label: "Startups", 
@@ -362,15 +359,14 @@ export function Navbar () {
     }
   ].map((item, index) => (
     <li key={index}>
-      <a
-        href="#"
-        className="flex items-start gap-3 hover:text-white transition-colors"
+        
+      <div className="flex items-start gap-3 hover:text-white transition-colors"
       >
         <div className="w-8 h-8 border border-gray-800 rounded-md p-1 bg-black hover:bg-gray-400 transition-colors flex items-center justify-center">
           {item.icon}
         </div>
         <span className="font-medium text-white">{item.label}</span>
-      </a>
+      </div>
     </li>
   ))}
 </ul>
