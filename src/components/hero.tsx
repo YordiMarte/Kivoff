@@ -62,7 +62,7 @@ export function Hero() {
     return (
         <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden">
             <div className="absolute top-0 left-0 w-full flex justify-center z-20 pt-8 mt-3">
-                    <a href="/termsNew">  
+                    <a href="/wrapped">  
                 <button className="flex items-center gap-3 bg-[#181A1B] border border-[#333] px-4 py-2 rounded-full shadow hover:bg-[#232526] transition-colors">
                     <span className="bg-[#00DC82] text-black text-xs font-semibold px-3 py-1 rounded-full">
                         New
@@ -97,7 +97,7 @@ export function Hero() {
     </a>
 
     <a
-    href="#"
+    href="/termsdemo"
         className="relative px-8 py-4 rounded-2xl font-semibold text-white border-2 border-[#00DC82] bg-black 
             overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg"
     >

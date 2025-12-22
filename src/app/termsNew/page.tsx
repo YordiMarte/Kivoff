@@ -1,12 +1,12 @@
-import NewComponent from "@/components/New/TermsNewInform";
-import { Navbar } from "@/components/navbar";
+import {Navbar} from "@/components/navbar";
+import TermsService from "@/components/More/TermsService";
 import Footer from "@/components/footer";
 
-export default function Page() {
+export default function TermsNewPage() {
     return (
         <>
             <Navbar />
-            <NewComponent />
+            <TermsService />
             <Footer />
         </>
     );

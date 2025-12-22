@@ -298,7 +298,7 @@ export function Navbar () {
 <div>
   <div>
   <h4 className="text-sm font-semibold mb-4 text-gray-500">SKILL LEVEL</h4>
-  <ul className="space-y-3">
+  <ol className="space-y-3">
     {[
       { label: "AI Builders", icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-blocks-icon lucide-blocks text-[#00DC82]">
@@ -324,7 +324,7 @@ export function Navbar () {
         </div>
       </li>
     ))}
-  </ul>
+  </ol>
 </div>
 </div>
 
@@ -332,7 +332,7 @@ export function Navbar () {
 
 <div>
   <h4 className="text-sm font-semibold mb-4 text-gray-500">WHO IT’S FOR</h4>
-    <ul className="space-y-3">
+    <ol className="space-y-3">
   {[
     { 
       label: "Startups", 
@@ -369,7 +369,7 @@ export function Navbar () {
       </div>
     </li>
   ))}
-</ul>
+</ol>
 
 </div>
 
