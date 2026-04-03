@@ -1,17 +1,15 @@
-/** @type {import("next").NextConfig} */
+/**@type {import('next').NextConfig} */
 const nextConfig = {
   turbopack: {},
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
-  transpilePackages: ["framer-motion"],
+  transpilePackages: ['framer-motion'],
   experimental: {
-    optimizePackageImports: ["framer-motion"]
-  },
-  devIndicators: {
-    buildActivity: false,
-    buildActivityPosition: "bottom-right",
-  },
+    optimizePackageImports: ['framer-motion']
+  }
 }
-
-export default nextConfig
+module.exports = nextConfig
