@@ -1,10 +1,13 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { GeistSans, GeistMono } from 'geist/font'
+import "./globals.css"
+import type { Metadata } from "next"
+import { GeistSans, GeistMono } from "geist/font"
 
 export const metadata: Metadata = {
-  title: 'Kivoff',
-  description: 'site',
+  title: "Kivoff",
+  description: "site",
+  icons: {
+    icon: "/KivoffIco.svg",
+  },
 }
 
 export default function RootLayout({
