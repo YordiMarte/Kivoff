@@ -1,5 +1,5 @@
-import { DocsPage } from '@/components/KUI/DocsPage2';
+import DocsPage2 from "@/components/KUI/DocsPage2";
 
 export default function Page() {
-    return <DocsPage />;
+  return <DocsPage2 active="" />;
 }
