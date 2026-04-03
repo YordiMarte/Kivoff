@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kivoff
 
-## Getting Started
+Backend infrastructure platform designed to support scalable services, internal APIs and system-level orchestration.
 
-First, run the development server:
+---
+
+## 🧠 Overview
+
+Kivoff is a backend-focused system built to simulate a real-world infrastructure layer used in modern applications.
+It provides a foundation for building scalable services, handling internal communication, and managing data persistence.
+
+The goal of this project is to demonstrate practical backend engineering skills beyond CRUD applications, focusing on structure, scalability and system design.
+
+---
+
+## 🚀 Architecture
+
+```
+Client
+  ↓
+API Layer (Node.js / TypeScript)
+  ↓
+Service Layer
+  ↓
+Database (PostgreSQL)
+```
+
+---
+
+## ⚙️ Features
+
+* Modular backend architecture
+* Structured service layer
+* REST API design
+* Database integration with PostgreSQL
+* Environment-based configuration
+* Docker-ready setup
+
+---
+
+## 🧱 Tech Stack
+
+* TypeScript
+* Node.js
+* PostgreSQL
+* Docker
+
+---
+
+## 📦 Project Structure
+
+```
+kivoff/
+├── src/
+│   ├── controllers/
+│   ├── services/
+│   ├── routes/
+│   ├── config/
+│   └── index.ts
+├── docker/
+├── .env
+└── README.md
+```
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USER/kivoff.git
+cd kivoff
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🐳 Docker
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+docker build -t kivoff .
+docker run -p 3000:3000 kivoff
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Purpose
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project was built as part of a backend engineering portfolio to demonstrate:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* System design thinking
+* Clean architecture
+* Scalable backend patterns
+* Production-oriented structure
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔮 Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Authentication & authorization layer
+* Redis caching
+* Background jobs
+* Observability (OpenTelemetry)
+* Kubernetes deployment
+
+---
+
+## 👤 Author
+
+Yordi Marte
+Backend Infrastructure Engineer
