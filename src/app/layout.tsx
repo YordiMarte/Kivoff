@@ -1,5 +1,11 @@
 import './globals.css'
+import type { Metadata } from 'next'
 import { GeistSans, GeistMono } from 'geist/font'
+
+export const metadata: Metadata = {
+  title: 'Kivoff',
+  description: 'site',
+}
 
 export default function RootLayout({
   children,

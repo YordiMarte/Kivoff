@@ -86,8 +86,8 @@ export default function KivoffWrapped() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* October */}
                         <div className="border border-white/10 rounded-2xl p-6 bg-black  backdrop-blur">
-                            <h3 className="text-xl font-semibold">October 2025 <span className="text-neutral-400 font-normal">.4 announcements</span></h3>
-                            <ul className="mt-6 space-y-3 text-neutral-300">
+                            <h3 className="text-ls font-semibold">October 2025 <span className="text-neutral-600 text-sm ml-2">  4 announcements</span></h3>
+                            <ul className="text-sm mt-6 space-y-3 text-neutral-300">
                                 <li>→ 17 oct: Start my journey as a founder</li>
                                 <li>→ 22 oct: I already planned the structure and the kivoff products</li>
                                 <li>→ 25 oct: building the Kivoff website...</li>
@@ -96,13 +96,13 @@ export default function KivoffWrapped() {
                         </div>
 
                         {/* November */}
-                        <div className="border border-white/10 rounded-2xl p-6 bg-white/5 backdrop-blur">
+                        <div className="border border-white/10 rounded-2xl p-6 bg-black backdrop-blur">
                             <div className="flex items-center gap-3">
-                                <h3 className="text-xl font-semibold">November 2025</h3>
+                                <h3 className="text-ls font-semibold">November 2025</h3>
                                 <span className="text-xs px-2 py-1 rounded-full bg-emerald-500/20 text-emerald-400">Launch Week</span>
-                                <span className="text-neutral-400 text-sm">. 6 announcements</span>
+                                <span className="text-neutral-600 text-sm ml-2"> 6 announcements</span>
                             </div>
-                            <ul className="mt-6 space-y-3 text-neutral-300">
+                            <ul className="text-sm mt-6 space-y-3 text-neutral-300">
                                 <li>→ 05 nov: Kivoff Landing page is live!</li>
                                 <li>→ 12 nov: First version of Kivoff Tasks launched</li>
                                 <li>→ 18 nov: Kivoff Notes is now available</li> 
@@ -113,10 +113,9 @@ export default function KivoffWrapped() {
                         </div>
 
                         {/* December */}
-                        <div className="border border-white/10 rounded-2xl p-6 bg-white/5 backdrop-blur">
-                            <h3 className="text-xl font-semibold">December 2025</h3>
-                                <span className="text-neutral-400 text-sm">. 6 announcements</span>
-                            <ul className="mt-6 space-y-3 text-neutral-300">
+                        <div className="border border-white/10 rounded-2xl p-6 bg-black backdrop-blur">
+                            <h3 className="text-ls font-semibold">December 2025 <span className="text-neutral-600 text-sm ml-2"> 3 announcements</span> </h3>
+                            <ul className="text-sm mt-6 space-y-3 text-neutral-300">
                                 <li>→ 05 dec: Documentation Area</li>
                                 <li>→ 12 dec: Kivoff UI is released</li>
                                 <li>→ 20 dec: I am developing & Deploy infera.JS</li>
