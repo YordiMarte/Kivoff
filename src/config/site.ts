@@ -9,7 +9,7 @@ export const siteConfig = {
         github: "https://github.com/YordiMarte/Kivoff",
     },
     nav: [
-        { label: "Product", href: "#product" },
+        { label: "Plafform", href: "#product" },
         { label: "Capabilities", href: "#capabilities" },
         { label: "Product", href: "#products" },
         { label: "Contact", href: "#contact" },

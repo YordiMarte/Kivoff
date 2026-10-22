@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import logo from "@/images/logo/kivoff.png";
 
 export function Navbar() {
   return (
@@ -12,15 +14,12 @@ export function Navbar() {
           aria-label={`${siteConfig.name} home`}
           className="flex items-center gap-2 justify-self-start"
         >
-          <span
-            aria-hidden
-            className="grid size-6 place-items-center rounded-md bg-gradient-to-br from-white to-brand text-xs font-bold text-background"
-          >
-            K
-          </span>
-          <span className="text-sm font-semibold tracking-tight">
-            {siteConfig.name}
-          </span>
+          <Image
+            src={logo}
+            alt=""
+            preload
+            className="h-6 w-auto"
+          />
         </Link>
 
         <nav aria-label="Main" className="hidden md:block">
