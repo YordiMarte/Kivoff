@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Code, Rocket, Sparkles } from "lucide-react";
+import { HeroBackground } from "@/components/sections/hero-background";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
@@ -9,10 +10,11 @@ const icons = {
   rocket: Rocket,
 } as const;
 
-export function Hero() {
-  return (
-    <section className="bg-hero-glow relative overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 pt-24 pb-20 sm:pt-32">
+  export function Hero() {
+    return (
+    <section className="relative isolate -mt-14 overflow-hidden pt-14">
+      <HeroBackground />
+      <div className="relative z-10 mx-auto max-w-6xl px-6 pt-16 pb-24 sm:pt-24">
         <h1 className="max-w-3xl text-5xl font-medium leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
           <span className="text-gradient">Build the tools.</span>
           <br />

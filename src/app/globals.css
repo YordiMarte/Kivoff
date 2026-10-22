@@ -172,17 +172,55 @@
   }
 }
 
-/* Texto con degradado metálico, como el titular de la referencia */
-@utility text-gradient {
-  background-image: linear-gradient(180deg, #ffffff 0%, #8a8f98 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.hero-bg__fold--a {
+  left: -20%;
+  top: 8%;
+  width: 90%;
+  height: 30rem;
+  filter: blur(60px);
+  background: radial-gradient(closest-side, rgb(255 255 255 / 0.22), transparent);
+  transform: rotate(-16deg);
+  animation: silk-a 24s ease-in-out infinite alternate;
 }
 
-/* Iluminación sutil de fondo para el hero */
-@utility bg-hero-glow {
-  background-image:
-    radial-gradient(60% 50% at 50% 0%, rgb(109 124 255 / 0.12), transparent 70%),
-    radial-gradient(40% 40% at 85% 20%, rgb(255 255 255 / 0.04), transparent 70%);
+.hero-bg__fold--b {
+  right: -15%;
+  top: 30%;
+  width: 75%;
+  height: 14rem;
+  filter: blur(50px);
+  background: radial-gradient(closest-side, rgb(255 255 255 / 0.18), transparent);
+  transform: rotate(-24deg);
+  animation: silk-b 30s ease-in-out infinite alternate;
+}
+
+.hero-bg__fold--c {
+  left: 5%;
+  top: 32%;
+  width: 70%;
+  height: 12rem;
+  filter: blur(50px);
+  background: radial-gradient(closest-side, rgb(0 0 0 / 0.55), transparent);
+  transform: rotate(-12deg);
+}
+
+.hero-bg__fold--d {
+  left: 25%;
+  top: -12%;
+  width: 55%;
+  height: 22rem;
+  filter: blur(90px);
+  background: radial-gradient(closest-side, rgb(109 124 255 / 0.12), transparent);
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(
+    130% 100% at 50% 35%,
+    transparent 55%,
+    rgb(0 0 0 / 0.5) 100%
+  );
 }
