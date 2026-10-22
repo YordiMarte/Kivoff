@@ -17,13 +17,13 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 pt-20 pb-28 text-center sm:pt-28">
         <Link
-          href="#products"
+          href="/kivoff-forward-recap"
           className="group flex h-9 items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] pr-3 pl-1.5 text-sm backdrop-blur transition-colors hover:bg-white/[0.08]"
         >
           <span className="rounded-full bg-brand px-2.5 py-0.5 text-xs font-semibold text-background">
             New
           </span>
-          What you missed at Kivoff Forward
+          What you missed at Resend Forward
           <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
         </Link>
 
