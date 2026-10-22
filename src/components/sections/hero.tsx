@@ -23,7 +23,7 @@ export function Hero() {
           <span className="rounded-full bg-brand px-2.5 py-0.5 text-xs font-semibold text-background">
             New
           </span>
-          What you missed at Resend Forward
+          What you missed at Kivoff Forward
           <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
         </Link>
 
