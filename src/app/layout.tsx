@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
-import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/layout/navbar";
+import { SiteBackground } from "@/components/layout/site-background";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -39,6 +40,7 @@ export default function RootLayout({
       className={`dark ${inter.variable} ${geistMono.variable}`}
     >
       <body>
+        <SiteBackground />
         <Navbar />
         {children}
       </body>
