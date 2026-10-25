@@ -1,10 +1,32 @@
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { featuredQuote } from "@/config/featured-quote";
 import { getInitials } from "@/lib/utils";
 
+function Avatar({ name, src }: { name: string; src?: StaticImageData }) {
+  if (src) {
+    return (
+      <Image
+        src={src}
+        alt={name}
+        className="size-12 shrink-0 rounded-full object-cover ring-1 ring-white/15"
+      />
+    );
+  }
+
+  return (
+    <span
+      aria-hidden
+      className="grid size-12 shrink-0 place-items-center rounded-full bg-gradient-to-br from-white/25 to-white/5 text-sm font-semibold ring-1 ring-white/15"
+    >
+      {getInitials(name)}
+    </span>
+  );
+}
+
 export function FeaturedQuote() {
-  const { quote, name, role, cta } = featuredQuote;
+  const { quote, name, role, avatar, cta } = featuredQuote;
 
   return (
     <section className="relative px-6 py-24 sm:py-32">
@@ -14,12 +36,7 @@ export function FeaturedQuote() {
         </blockquote>
 
         <figcaption className="mt-10 flex items-center gap-3">
-          <span
-            aria-hidden
-            className="grid size-11 shrink-0 place-items-center rounded-full bg-gradient-to-br from-white/25 to-white/5 text-sm font-semibold ring-1 ring-white/15"
-          >
-            {getInitials(name)}
-          </span>
+          <Avatar name={name} src={avatar} />
           <div className="text-left">
             <p className="text-base font-medium">{name}</p>
             <p className="text-sm text-muted-foreground">{role}</p>
