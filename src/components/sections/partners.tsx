@@ -22,7 +22,7 @@ export function Partners() {
                             <Image
                                 src={partner.logo}
                                 alt={partner.name}
-                                className="h-7 w-auto opacity-60 brightness-0 invert transition-opacity hover:opacity-100"
+                                className= {`${partner.heightClass ?? "h-16"} w-auto opacity-60 brightness-0 invert transition-opacity hover:opacity-100`}
                             />
                         ) : (
                             <span className="text-xl font-semibold tracking-light text-foreground/60 transition-colors hover:text-foreground">
