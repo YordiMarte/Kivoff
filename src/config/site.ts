@@ -14,11 +14,6 @@ export const siteConfig = {
         { label: "Product", href: "#products" },
         { label: "Contact", href: "#contact" },
     ],
-    pillars: [
-        { label: "Custom software", icon: "code" },
-        { label: "AI-powered products", icon: "sparkles" },
-        { label: "From idea to deployment", icon: "rocket" },
-    ]
 } as const;
 
 export type SiteConfig = typeof siteConfig;

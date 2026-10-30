@@ -58,18 +58,6 @@ export function Hero() {
             <Link href="#contact">Get a demo</Link>
           </Button>
         </div>
-
-        <ul className="mt-14 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
-          {siteConfig.pillars.map((pillar) => {
-            const Icon = icons[pillar.icon];
-            return (
-              <li key={pillar.label} className="flex items-center gap-2">
-                <Icon className="size-4" aria-hidden />
-                {pillar.label}
-              </li>
-            );
-          })}
-        </ul>
       </div>
     </section>
   );
