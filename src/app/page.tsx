@@ -17,7 +17,6 @@ export default function Home() {
       <FeaturedQuote />
       <Products2 />
       <Testimonials />
-      <Footer />
     </main>
   );
 }
