@@ -3,12 +3,14 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { FeaturedQuote } from "@/components/sections/featured-quote";
 import { Partners } from "@/components/sections/partners";
 import { Footer } from "@/components/sections/footer";
+import { Products } from "@/components/sections/products";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Partners />
+      <Products />
       <FeaturedQuote />
       <Testimonials />
       <Footer />
