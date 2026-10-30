@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { SiteBackground } from "@/components/layout/site-background";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
-
+import { Footer } from "@/components/sections/footer";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -39,10 +39,11 @@ export default function RootLayout({
       lang="en"
       className={`dark ${inter.variable} ${geistMono.variable}`}
     >
-      <body>
+      <body className="flex min-h-screen flex-col">
         <SiteBackground />
         <Navbar />
-        {children}
+        <div className="fle-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );
