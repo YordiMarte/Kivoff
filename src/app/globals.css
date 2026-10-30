@@ -68,8 +68,8 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: rgb(255 255 255 / 0.08);
   --input: rgb(255 255 255 / 0.1);
-  --ring: #00dc82;
-  --brand: #00dc82;
+  --ring: #f1f8f8;
+  --brand: #f1f8f8;
   --radius: 0.625rem;
 
   --chart-1: oklch(0.87 0 0);
@@ -80,12 +80,12 @@
 
   --sidebar: #0f1011;
   --sidebar-foreground: #f7f8f8;
-  --sidebar-primary: #00dc82;
-  --sidebar-primary-foreground: #08090a;
+  --sidebar-primary: #f1f8f8;
+  --sidebar-primary-foreground: #f1f8f8;
   --sidebar-accent: #1c1d21;
   --sidebar-accent-foreground: #f7f8f8;
   --sidebar-border: rgb(255 255 255 / 0.08);
-  --sidebar-ring: #00dc82;
+  --sidebar-ring: #f1f8f8;
 
   ::selection {
     background: color-mix(in oklab, var(--brand) 30%, transparent);

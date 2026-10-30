@@ -33,7 +33,7 @@ function ProductMark({ product }: { product: Product }) {
 
 function ProductPreview({ product }: { product: Product }) {
   return (
-    <div className="relative mt-14 w-full overflow-hidden rounded-3xl border border-white/10 bg-black shadow-[0_0_90px_-30px_rgb(0_220_130/0.35)]">
+    <div className="relative mt-14 w-full overflow-hidden rounded-3xl border border-white/10 bg-black shadow-[0_0_90px_-30px_color-mix(in_oklab,var(--brand)_35%,transparent)]">
       {product.screenshot ? (
         <Image
           src={product.screenshot}
