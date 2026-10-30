@@ -14,7 +14,7 @@ export const products: readonly Product[] = [
     {
         id: "v0",
         name: "v0",
-        description: "A simple, fast, and secure way to build and deploy web applications.",
+        description: "An AI assistant that knows your company. Connect your documents, ask in plain language, and get answers with the source cited. Actions that create tickets and draft emails are coming next.",
         logo: v0Logo,
     },
 ] as const;
