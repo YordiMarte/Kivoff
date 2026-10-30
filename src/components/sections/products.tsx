@@ -4,22 +4,29 @@ import { products, type Product } from "@/config/products";
 
 function ProductMark({ product }: { product: Product }) {
   return (
-    <div className="relative">
+    <div className="relative size-24">
       <div
         aria-hidden
         className="absolute inset-x-5 -bottom-2 h-6 rounded-full bg-brand/60 blur-xl"
       />
-      <div className="relative grid size-24 place-items-center rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/[0.12] to-white/[0.02] shadow-[inset_0_1px_0_rgb(255_255_255/0.12)] backdrop-blur">
+
         {product.logo ? (
           <Image
             src={product.logo}
             alt=""
-            className="size-14 object-contain"
+            sizes="96px"
+            className="relative size-full rounded-[1.75rem] object-cover"
           />
         ) : (
+        <div className="relative grid size-full place-items-center rounded-[1.75rem] bg-gradient-to-b from-white/[0.12] to-white/[0.02]">
           <Box className="size-10 text-foreground/80" aria-hidden />
+        </div>
         )}
-      </div>
+
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-0 rounded-[1.75rem] ring-1 ring-white/15 ring-inset"
+      />
     </div>
   );
 }
