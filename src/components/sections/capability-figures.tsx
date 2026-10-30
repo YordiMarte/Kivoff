@@ -71,10 +71,7 @@ function Figure({ children }: { children: ReactNode }) {
       viewBox="0 0 320 260"
       aria-hidden
       focusable="false"
-      strokeWidth={1}
-      strokeLinejoin="round"
-      strokeLinecap="round"
-      className="size-full fill-background stroke-white/30 transition-colors duration-300 group-hover:stroke-brand/70"
+      className="fig size-full"
     >
       {children}
     </svg>

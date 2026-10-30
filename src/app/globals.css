@@ -68,6 +68,8 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: rgb(255 255 255 / 0.08);
   --input: rgb(255 255 255 / 0.1);
+  --ring: #00dc82;
+  --brand: #00dc82;
   --radius: 0.625rem;
 
   --chart-1: oklch(0.87 0 0);
@@ -78,11 +80,12 @@
 
   --sidebar: #0f1011;
   --sidebar-foreground: #f7f8f8;
-  --sidebar-primary-foreground: #f7f8f8;
+  --sidebar-primary: #00dc82;
+  --sidebar-primary-foreground: #08090a;
   --sidebar-accent: #1c1d21;
   --sidebar-accent-foreground: #f7f8f8;
   --sidebar-border: rgb(255 255 255 / 0.08);
-  --sidebar-ring: #6d7cff;
+  --sidebar-ring: #00dc82;
 
   ::selection {
     background: color-mix(in oklab, var(--brand) 30%, transparent);
@@ -329,12 +332,6 @@
 }
 
 @keyframes fig-step {
-  0%,
-  60%,
-  100% {
-    transform: translateY(0);
-    stroke: rgb(255 255 255 / 0.3);
-  }
   30% {
     transform: translateY(-5px);
     stroke: color-mix(in oklab, var(--brand) 90%, transparent);
@@ -363,5 +360,32 @@
   .fig-step,
   .fig-flag {
     animation: none;
+  }
+}
+
+/* Figuras: trazo base y estado hover en CSS plano */
+.fig {
+  fill: var(--background);
+  stroke: rgb(255 255 255 / 0.3);
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  transition:
+    stroke 0.3s ease,
+    filter 0.3s ease;
+}
+
+.fig-accent {
+  fill: color-mix(in oklab, var(--brand) 25%, transparent);
+  stroke: color-mix(in oklab, var(--brand) 80%, transparent);
+}
+
+@media (hover: hover) {
+  .group:hover .fig,
+  .group:focus-within .fig {
+    stroke: color-mix(in oklab, var(--brand) 85%, white 5%);
+    filter: drop-shadow(
+      0 0 10px color-mix(in oklab, var(--brand) 30%, transparent)
+    );
   }
 }
