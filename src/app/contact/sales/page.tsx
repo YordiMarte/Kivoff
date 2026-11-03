@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { CircleCheck } from "lucide-react";
 import { SalesForm } from "@/components/sections/sales-form";
@@ -35,12 +36,12 @@ export default function ContactSalesPage() {
 
           <p className="mt-10 text-sm text-muted-foreground">
             Technical issues or product questions?{" "}
-            <a
-              href={mailto(contactConfig.email, "Support request")}
+            <Link
+              href="/contact/support"
               className="text-foreground underline underline-offset-4"
             >
               Contact support
-            </a>
+            </Link>
           </p>
         </div>
 

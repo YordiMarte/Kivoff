@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { companySizes } from "@/config/contact";
+import type { FormState } from "@/lib/validations/form-state";
 
 export const salesSchema = z.object({
   name: z
@@ -24,9 +25,4 @@ export const salesSchema = z.object({
 
 export type SalesField = keyof z.infer<typeof salesSchema>;
 
-export type SalesFormState = {
-  status: "idle" | "success" | "error";
-  message?: string;
-  fieldErrors?: Partial<Record<SalesField, string>>;
-  values?: Record<SalesField, string>;
-};
+export type SalesFormState = FormState<SalesField>;

@@ -1,5 +1,10 @@
+export const companySizes = ["1-19", "20-99", "100-499", "500+"] as const;
+
+export const supportTopics = ["Kivoff", "Ky", "This website", "Other"] as const;
+
 export const contactConfig = {
   heading: "How can we help?",
+  /** Placeholder: replace with a mailbox you actually monitor. */
   email: "hello@kivoff.com",
   options: [
     {
@@ -14,7 +19,7 @@ export const contactConfig = {
       title: "Support",
       description:
         "Questions about a product we built? Ask for help, report a problem, or leave feedback.",
-      cta: { label: "Contact support", subject: "Support request" },
+      cta: { label: "Contact support", href: "/contact/support" },
     },
     {
       id: "other",
@@ -29,5 +34,3 @@ export const contactConfig = {
 export function mailto(email: string, subject: string) {
   return `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 }
-
-export const companySizes = ["1-19", "20-99", "100-499", "500+"] as const;

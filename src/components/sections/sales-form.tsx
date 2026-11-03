@@ -1,42 +1,14 @@
 "use client";
 
-import { useActionState, type ReactNode } from "react";
+import { useActionState } from "react";
 import { ChevronsUpDown, LoaderCircle } from "lucide-react";
+import { Field, Honeypot, fieldClass } from "@/components/forms/form-field";
 import { submitSalesInquiry } from "@/app/contact/sales/actions";
 import { Button } from "@/components/ui/button";
 import { companySizes, contactConfig } from "@/config/contact";
 import type { SalesFormState } from "@/lib/validations/sales";
 
 const initialState: SalesFormState = { status: "idle" };
-
-const fieldClass =
-  "w-full rounded-lg border border-white/10 bg-white/[0.04] px-3.5 py-3 text-[15px] text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-brand/60 focus:ring-2 focus:ring-brand/20 aria-[invalid=true]:border-red-400/60";
-
-function Field({
-  id,
-  label,
-  error,
-  children,
-}: {
-  id: string;
-  label: string;
-  error?: string;
-  children: ReactNode;
-}) {
-  return (
-    <div>
-      <label htmlFor={id} className="mb-2 block text-sm text-muted-foreground">
-        {label}
-      </label>
-      {children}
-      {error && (
-        <p id={`${id}-error`} role="alert" className="mt-2 text-sm text-red-400">
-          {error}
-        </p>
-      )}
-    </div>
-  );
-}
 
 export function SalesForm() {
   const [state, formAction, isPending] = useActionState(
@@ -62,12 +34,8 @@ export function SalesForm() {
       <h2 className="text-lg font-medium">Tell us how we can help</h2>
 
       {/* Honeypot */}
-      <div aria-hidden className="absolute -left-[9999px]">
-        <label>
-          Website
-          <input type="text" name="website" tabIndex={-1} autoComplete="off" />
-        </label>
-      </div>
+      <Honeypot />
+
 
       <Field id="name" label="Full name" error={errors.name}>
         <input
