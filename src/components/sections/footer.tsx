@@ -1,10 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import logo from "@/images/logo/kivoff.png";
 
 export function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer>
       <section className="relative isolate overflow-hidden">
@@ -29,18 +29,13 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-12 md:flex-row md:items-start md:justify-between">
-          <div className="max-w-xs">
-            <Link
-              href="/"
-              aria-label={`${siteConfig.name} home`}
-              className="text-base font-semibold tracking-tight"
-            >
-              {siteConfig.name}
-            </Link>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.tagline} {siteConfig.subtitle}
-            </p>
-          </div>
+          <Link
+            href="/"
+            aria-label={`${siteConfig.name} home`}
+            className="text-base font-semibold tracking-tight"
+          >
+            <Image src={logo} alt="" preload className="h-6 w-auto" />
+          </Link>
 
           <nav aria-label="Footer">
             <ul className="flex flex-wrap gap-x-8 gap-y-3 text-sm">
@@ -54,25 +49,9 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a
-                  href={siteConfig.links.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  GitHub
-                </a>
-              </li>
             </ul>
           </nav>
         </div>
-      </div>
-
-      <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-6 py-6 text-xs text-muted-foreground">
-          © {year} {siteConfig.name}. All rights reserved.
-        </p>
       </div>
     </footer>
   );
