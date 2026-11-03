@@ -7,7 +7,7 @@ export const contactConfig = {
       title: "Sales",
       description:
         "Tell us about the product you need. We'll talk through custom software, AI tools, timelines, or set up a demo.",
-      cta: { label: "Talk to sales", subject: "Sales inquiry" },
+      cta: { label: "Talk to sales", href: "/contact/sales" },
     },
     {
       id: "support",
@@ -29,3 +29,5 @@ export const contactConfig = {
 export function mailto(email: string, subject: string) {
   return `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 }
+
+export const companySizes = ["1-19", "20-99", "100-499", "500+"] as const;
