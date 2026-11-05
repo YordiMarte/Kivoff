@@ -29,9 +29,9 @@ export function Navbar() {
           <Button
             asChild
             size="sm"
-            className="rounded-full border border-white/10 bg-white/5 px-4 text-foreground hover:bg-white/10"
+            className="rounded-full bg-foreground px-4 text-black hover:bg-foreground/90"
           >
-            <Link href="#contact">
+            <Link href="/contact">
               Get started
               <ArrowRight className="size-3.5" />
             </Link>
