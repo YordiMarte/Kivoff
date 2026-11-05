@@ -61,6 +61,8 @@ function MenuEntry({
 }
 
 function Dropdown({ item }: { item: NavDropdownItem }) {
+  const secondary = item.menu.secondary ?? [];
+  const hasSecondary = secondary.length > 0;
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLLIElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -127,28 +129,36 @@ function Dropdown({ item }: { item: NavDropdownItem }) {
         />
       </button>
 
-      <div
-        id={panelId}
-        className={cn(
-          "absolute top-full left-1/2 w-[34rem] -translate-x-1/2 pt-3 transition duration-150",
-          open
-            ? "visible translate-y-0 opacity-100"
-            : "invisible -translate-y-1 opacity-0",
-        )}
-      >
-        <div className="grid grid-cols-[1.5fr_1fr] rounded-2xl border border-white/10 bg-[#0c0d0e]/95 p-2 shadow-2xl shadow-black/60 backdrop-blur-xl">
-          <div>
-            {item.menu.featured.map((entry) => (
-              <MenuEntry key={entry.label} item={entry} onNavigate={close} />
-            ))}
-          </div>
-          <div className="border-l border-white/10 pl-2">
-            {item.menu.secondary.map((entry) => (
-              <MenuEntry key={entry.label} item={entry} onNavigate={close} />
-            ))}
-          </div>
-        </div>
+ <div
+  id={panelId}
+  className={cn(
+    "absolute top-full left-1/2 -translate-x-1/2 pt-3 transition duration-150",
+    hasSecondary ? "w-[34rem]" : "w-72",
+    open
+      ? "visible translate-y-0 opacity-100"
+      : "invisible -translate-y-1 opacity-0",
+  )}
+>
+  <div
+    className={cn(
+      "rounded-2xl border border-white/10 bg-[#0c0d0e]/95 p-2 shadow-2xl shadow-black/60 backdrop-blur-xl",
+      hasSecondary && "grid grid-cols-[1.5fr_1fr]",
+    )}
+  >
+    <div>
+      {item.menu.featured.map((entry) => (
+        <MenuEntry key={entry.label} item={entry} onNavigate={close} />
+      ))}
+    </div>
+    {hasSecondary && (
+      <div className="border-l border-white/10 pl-2">
+        {secondary.map((entry) => (
+          <MenuEntry key={entry.label} item={entry} onNavigate={close} />
+        ))}
       </div>
+    )}
+  </div>
+</div>
     </li>
   );
 }
