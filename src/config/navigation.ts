@@ -23,6 +23,7 @@ export const navigation: NavItem[] = [
         { label: "Ky", href: "/#ky" },
         { label: "Kova", href: "/#kova" },
       ],
+      secondary: [],
     },
   },
   {
