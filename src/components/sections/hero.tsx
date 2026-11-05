@@ -46,16 +46,7 @@ export function Hero() {
             size="lg"
             className="h-12 rounded-xl bg-foreground px-6 text-base font-medium text-background hover:bg-foreground/90"
           >
-            <Link href="#contact">Start building</Link>
-          </Button>
-
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="h-12 rounded-xl border-brand/60 bg-transparent px-6 text-base font-medium text-foreground hover:bg-brand/10"
-          >
-            <Link href="#contact">Get a demo</Link>
+            <Link href="/contact/sales">Start building</Link>
           </Button>
         </div>
       </div>
