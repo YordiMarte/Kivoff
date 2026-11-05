@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import logo from "@/images/logo/kivoff.png";
+import { NavMenu } from "@/components/layout/nav-menu";
 
 export function Navbar() {
   return (
@@ -22,20 +23,7 @@ export function Navbar() {
           />
         </Link>
 
-        <nav aria-label="Main" className="hidden md:block">
-          <ul className="flex items-center gap-8">
-            {siteConfig.nav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <NavMenu />
 
         <div className="flex items-center gap-3 justify-self-end">
           <Button

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import logo from "@/images/logo/kivoff.png";
+import { footerLinks } from "@/config/navigation";
 
 export function Footer() {
   return (
@@ -39,14 +40,14 @@ export function Footer() {
 
           <nav aria-label="Footer">
             <ul className="flex flex-wrap gap-x-8 gap-y-3 text-sm">
-              {siteConfig.nav.map((item) => (
+              {footerLinks.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     className="text-muted-foreground transition-colors hover:text-foreground"
                   >
                     {item.label}
-                  </Link>
+                  </Link>                                       
                 </li>
               ))}
             </ul>

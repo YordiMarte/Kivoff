@@ -1,3 +1,4 @@
+
 export const siteConfig = {
     name: "Kivoff",
     tagline: "Build the tools. Deploy the future.",
@@ -8,12 +9,6 @@ export const siteConfig = {
     links: {
         github: "https://github.com/YordiMarte/Kivoff",
     },
-    nav: [
-        { label: "Products", href: "#products" },
-        { label: "Resources", href: "resources" },
-        { label: "Pricing", href: "/pricing" },
-        { label: "Contact", href: "/contact" },
-    ],
 } as const;
 
 export type SiteConfig = typeof siteConfig;
